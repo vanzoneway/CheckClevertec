@@ -21,6 +21,10 @@ public class CheckRunner {
                     new String[] {"ERROR"},
                     new String[] {e.getMessage()}
             )));
+            CSVWorker.writeCSVToConsole(new ArrayList<>(Arrays.asList(
+                    new String[] {"ERROR"},
+                    new String[] {e.getMessage()}
+            )));
         }
 
 

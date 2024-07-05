@@ -37,6 +37,13 @@ public class CSVWorker implements CSVReader, CSVWriter{
     }
 
     @Override
+    public void writeCSVToConsole(List<String[]> csvData) {
+        for(String[] row : csvData) {
+            System.out.println(String.join(";", row));
+        }
+    }
+
+    @Override
     public String[] findProductById(List<String[]> csvData, int productId){
 
         Iterator<String[]> iterator = csvData.iterator();

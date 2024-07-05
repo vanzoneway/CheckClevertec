@@ -58,6 +58,7 @@ public class CheckService {
         addTotalInfo(csvResult);
 
         CSVWorker.writeCSV(pathToResult, csvResult);
+        CSVWorker.writeCSVToConsole(csvResult);
 
 
     }
