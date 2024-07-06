@@ -6,7 +6,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Objects;
 
-public class CSVWorker implements CSVReader, CSVWriter{
+public class CSVWorker implements CSVReader, CSVWriter {
 
     @Override
     public List<String[]> readCSV(String filePath) throws IllegalArgumentException {
@@ -38,13 +38,13 @@ public class CSVWorker implements CSVReader, CSVWriter{
 
     @Override
     public void writeCSVToConsole(List<String[]> csvData) {
-        for(String[] row : csvData) {
+        for (String[] row : csvData) {
             System.out.println(String.join(";", row));
         }
     }
 
     @Override
-    public String[] findProductById(List<String[]> csvData, int productId){
+    public String[] findProductById(List<String[]> csvData, int productId) {
 
         Iterator<String[]> iterator = csvData.iterator();
         if (iterator.hasNext()) {

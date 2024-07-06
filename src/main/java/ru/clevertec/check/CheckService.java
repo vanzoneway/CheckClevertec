@@ -3,7 +3,6 @@ package main.java.ru.clevertec.check;
 
 import com.sun.jdi.InternalException;
 
-import java.io.IOException;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
@@ -22,17 +21,17 @@ public class CheckService {
     private double total = 0.0;
     private double discount = 0.0;
 
-    InputParams inputParams;
 
-    public CheckService(String[] args,
-                        String pathToProducts,
-                        String pathToDiscountCards,
-                        String pathToResult) throws IOException {
+    private final InputParams inputParams;
 
-        this.pathToResult = pathToResult;
-        this.csvProducts = CSVWorker.readCSV(pathToProducts);
+    public CheckService(String pathToDiscountCards,
+                        InputParams inputParams) {
+
         this.csvDiscounts = CSVWorker.readCSV(pathToDiscountCards);
-        this.inputParams = Parser.parseBasicCommandArgs(args);
+        this.inputParams = inputParams;
+        this.csvProducts = CSVWorker.readCSV(inputParams.getPathToFile());
+        this.pathToResult = inputParams.getSaveToFile();
+
     }
 
 
@@ -44,11 +43,13 @@ public class CheckService {
         if (Objects.isNull(inputParams.getItems()) || !isStringContainsOnlyDigits(inputParams.getDiscountCard()))
             throw new InternalException("BAD REQUEST");
 
+        if (Objects.isNull(pathToResult))
+            throw new IllegalArgumentException("BAD REQUEST");
 
         addDateAndTime(csvResult);
         addOrderInfo(csvResult);
 
-        if(inputParams.getBalanceDebitCard() < total - discount)
+        if (inputParams.getBalanceDebitCard() < total - discount)
             throw new IllegalArgumentException("NOT ENOUGH MONEY");
 
         if (Objects.nonNull(inputParams.getDiscountCard())) {
@@ -64,10 +65,10 @@ public class CheckService {
     }
 
     private boolean isStringContainsOnlyDigits(String word) {
-        if(Objects.isNull(word)) return false;
+        if (Objects.isNull(word)) return false;
         boolean isOnlyDigits = true;
-        for(int i = 0; i < word.length() && isOnlyDigits; i++) {
-            if(!Character.isDigit(word.charAt(i))) {
+        for (int i = 0; i < word.length() && isOnlyDigits; i++) {
+            if (!Character.isDigit(word.charAt(i))) {
                 isOnlyDigits = false;
             }
         }
@@ -99,7 +100,7 @@ public class CheckService {
 
         List<Item> items = inputParams.getItems();
 
-        for(Item item : items) {
+        for (Item item : items) {
             String[] product = CSVWorker.findProductById(csvProducts, item.getId());
             if (Objects.isNull(product)) throw new IllegalArgumentException("BAD REQUEST");
             String qty = String.valueOf(item.getQuantity());
@@ -140,10 +141,10 @@ public class CheckService {
     private String countDiscountIfCardExists(String discountCardNumber,
                                              String total) {
         String[] discountInfo = CSVWorker.findDiscountInfoByCardNumber(csvDiscounts, discountCardNumber);
-        if(discountInfo == null) {
-            return String.format("%.2f",Double.parseDouble(total) * 0.03);
+        if (discountInfo == null) {
+            return String.format("%.2f", Double.parseDouble(total) * 0.03);
         }
-        return String.format("%.2f",Double.parseDouble(total) * Double.parseDouble(discountInfo[2]) * 0.01);
+        return String.format("%.2f", Double.parseDouble(total) * Double.parseDouble(discountInfo[2]) * 0.01);
 
     }
 
@@ -160,7 +161,7 @@ public class CheckService {
 
     private String getDiscountPercentageIfCardExists(String discountCardNumber) {
         String[] discountInfo = CSVWorker.findDiscountInfoByCardNumber(csvDiscounts, discountCardNumber);
-        if(discountInfo == null) {
+        if (discountInfo == null) {
             return "3";
         }
         return discountInfo[2];

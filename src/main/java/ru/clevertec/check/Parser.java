@@ -10,6 +10,8 @@ public class Parser {
         List<Item> items = new ArrayList<>();
         String discountCard = null;
         double balanceDebitCard = 0.0;
+        String pathToFile = null;
+        String saveToFile = null;
 
         try {
             for (String arg : args) {
@@ -22,14 +24,15 @@ public class Parser {
                     String[] parts = arg.split("=");
                     String key = parts[0];
                     String value = parts[1];
-                    if (key.equals("discountCard")) {
-                        discountCard = value;
-                    } else if (key.equals("balanceDebitCard")) {
-                        balanceDebitCard = Double.parseDouble(value);
+                    switch (key) {
+                        case "discountCard" -> discountCard = value;
+                        case "balanceDebitCard" -> balanceDebitCard = Double.parseDouble(value);
+                        case "pathToFile" -> pathToFile = value;
+                        case "saveToFile" -> saveToFile = value;
                     }
                 }
             }
-        }catch (Exception e){
+        } catch (Exception e) {
             throw new IOException("BAD REQUEST");
         }
 
@@ -38,6 +41,8 @@ public class Parser {
                 .items(items)
                 .balanceDebitCard(balanceDebitCard)
                 .discountCard(discountCard)
+                .pathToFile(pathToFile)
+                .saveToFile(saveToFile)
                 .build();
     }
 
