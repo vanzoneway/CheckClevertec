@@ -1,4 +1,4 @@
-package main.java.ru.clevertec.check;
+package ru.clevertec.check;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -10,7 +10,9 @@ public class Parser {
         List<Item> items = new ArrayList<>();
         String discountCard = null;
         double balanceDebitCard = 0.0;
-        String pathToFile = null;
+        String datasourceUrl = null;
+        String datasourceUsername = null;
+        String datasourcePassword = null;
         String saveToFile = null;
 
         try {
@@ -27,8 +29,10 @@ public class Parser {
                     switch (key) {
                         case "discountCard" -> discountCard = value;
                         case "balanceDebitCard" -> balanceDebitCard = Double.parseDouble(value);
-                        case "pathToFile" -> pathToFile = value;
                         case "saveToFile" -> saveToFile = value;
+                        case "datasource.url" -> datasourceUrl = value;
+                        case "datasource.username" -> datasourceUsername = value;
+                        case "datasource.password" -> datasourcePassword = value;
                     }
                 }
             }
@@ -41,8 +45,10 @@ public class Parser {
                 .items(items)
                 .balanceDebitCard(balanceDebitCard)
                 .discountCard(discountCard)
-                .pathToFile(pathToFile)
                 .saveToFile(saveToFile)
+                .datasourceUrl(datasourceUrl)
+                .datasourceUsername(datasourceUsername)
+                .datasourcePassword(datasourcePassword)
                 .build();
     }
 

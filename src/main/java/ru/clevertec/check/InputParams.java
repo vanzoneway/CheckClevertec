@@ -1,4 +1,4 @@
-package main.java.ru.clevertec.check;
+package ru.clevertec.check;
 
 import java.util.List;
 
@@ -7,8 +7,10 @@ public class InputParams {
     private final List<Item> items;
     private final String discountCard;
     private final double balanceDebitCard;
-    private final String pathToFile;
     private final String saveToFile;
+    private final String datasourceUrl;
+    private final String datasourceUsername;
+    private final String datasourcePassword;
 
 
     public List<Item> getItems() {
@@ -23,12 +25,20 @@ public class InputParams {
         return balanceDebitCard;
     }
 
-    public String getPathToFile() {
-        return pathToFile;
-    }
-
     public String getSaveToFile() {
         return saveToFile;
+    }
+
+    public String getDatasourceUrl() {
+        return datasourceUrl;
+    }
+
+    public String getDatasourceUsername() {
+        return datasourceUsername;
+    }
+
+    public String getDatasourcePassword() {
+        return datasourcePassword;
     }
 
     public static InputParamsBuilder builder() {
@@ -38,13 +48,17 @@ public class InputParams {
     public InputParams(List<Item> items,
                        String discountCard,
                        double balanceDebitCard,
-                       String pathToFile,
-                       String saveToFile) {
+                       String saveToFile,
+                       String datasourceUrl,
+                       String datasourceUsername,
+                       String datasourcePassword) {
         this.items = items;
         this.discountCard = discountCard;
         this.balanceDebitCard = balanceDebitCard;
-        this.pathToFile = pathToFile;
         this.saveToFile = saveToFile;
+        this.datasourceUrl = datasourceUrl;
+        this.datasourceUsername = datasourceUsername;
+        this.datasourcePassword = datasourcePassword;
     }
 
 
@@ -53,8 +67,10 @@ public class InputParams {
         private List<Item> items;
         private String discountCard;
         private double balanceDebitCard;
-        private String pathToFile;
         private String saveToFile;
+        private String datasourceUrl;
+        private String datasourceUsername;
+        private String datasourcePassword;
 
 
         public InputParamsBuilder items(List<Item> items) {
@@ -72,18 +88,33 @@ public class InputParams {
             return this;
         }
 
-        public InputParamsBuilder pathToFile(String pathToFile) {
-            this.pathToFile = pathToFile;
-            return this;
-        }
 
         public InputParamsBuilder saveToFile(String saveToFile) {
             this.saveToFile = saveToFile;
             return this;
         }
 
-        public InputParams build() {
-            return new InputParams(items, discountCard, balanceDebitCard, pathToFile, saveToFile);
+        public InputParamsBuilder datasourceUrl(String datasourceUrl) {
+            this.datasourceUrl = datasourceUrl;
+            return this;
         }
+
+        public InputParamsBuilder datasourceUsername(String datasourceUsername) {
+            this.datasourceUsername = datasourceUsername;
+            return this;
+        }
+
+        public InputParamsBuilder datasourcePassword(String datasourcePassword) {
+            this.datasourcePassword = datasourcePassword;
+            return this;
+        }
+
+        public InputParams build() {
+            return new InputParams(items, discountCard, balanceDebitCard,
+                    saveToFile, datasourceUrl, datasourceUsername,
+                    datasourcePassword);
+        }
+
+
     }
 }

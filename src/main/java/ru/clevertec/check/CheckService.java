@@ -1,8 +1,9 @@
-package main.java.ru.clevertec.check;
+package ru.clevertec.check;
 
 
 import com.sun.jdi.InternalException;
 
+import java.sql.SQLException;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
@@ -15,23 +16,34 @@ public class CheckService {
 
     private final CSVWorker CSVWorker = new CSVWorker();
 
-    List<String[]> csvProducts;
-    List<String[]> csvDiscounts;
 
     private double total = 0.0;
     private double discount = 0.0;
 
+    private final ProductRepository productRepository;
+    private final DiscountCardRepository discountCardRepository;
+
 
     private final InputParams inputParams;
 
-    public CheckService(String pathToDiscountCards,
-                        InputParams inputParams) {
+    public CheckService(InputParams inputParams,
+                        DiscountCardRepository discountCardRepository,
+                        ProductRepository productRepository) {
 
-        this.csvDiscounts = CSVWorker.readCSV(pathToDiscountCards);
         this.inputParams = inputParams;
-        this.csvProducts = CSVWorker.readCSV(inputParams.getPathToFile());
         this.pathToResult = inputParams.getSaveToFile();
+        this.productRepository = productRepository;
+        this.discountCardRepository = discountCardRepository;
 
+    }
+
+
+    public void setTotal(double total) {
+        this.total = total;
+    }
+
+    public void setDiscount(double discount) {
+        this.discount = discount;
     }
 
 
@@ -93,7 +105,7 @@ public class CheckService {
 
     }
 
-    private void addOrderInfo(List<String[]> csvResult) throws IllegalArgumentException {
+    private void addOrderInfo(List<String[]> csvResult) throws IllegalArgumentException, SQLException {
         String[] indexes = {"QTY", "DESCRIPTION", "PRICE", "DISCOUNT", "TOTAL"};
         csvResult.add(indexes);
 
@@ -101,12 +113,12 @@ public class CheckService {
         List<Item> items = inputParams.getItems();
 
         for (Item item : items) {
-            String[] product = CSVWorker.findProductById(csvProducts, item.getId());
+            Product product = productRepository.getProductById(item.getId());
             if (Objects.isNull(product)) throw new IllegalArgumentException("BAD REQUEST");
             String qty = String.valueOf(item.getQuantity());
-            String description = product[1];
-            String price = product[2];
-            double row_total = item.getQuantity() * Double.parseDouble(product[2]);
+            String description = product.getDescription();
+            String price = String.valueOf(product.getPrice());
+            double row_total = item.getQuantity() * product.getPrice();
             total += row_total;
             String total = String.valueOf(row_total);
             String discount =
@@ -114,7 +126,7 @@ public class CheckService {
                             inputParams.getDiscountCard(),
                             qty,
                             total,
-                            product[4]);
+                            product.isIs_wholesale_product());
             this.discount += Double.parseDouble(discount);
 
             csvResult.add(new String[]{qty, description, price + "$", discount + "$", total + "$"});
@@ -126,9 +138,9 @@ public class CheckService {
     private String countDiscountForOneRow(String discountCardNumber,
                                           String qty,
                                           String total,
-                                          String wholesale) {
+                                          boolean wholesale) throws SQLException {
 
-        if (Integer.parseInt(qty) >= 5 && Objects.equals(wholesale, "+")) {
+        if (Integer.parseInt(qty) >= 5 && wholesale) {
             return String.format("%.2f", Double.parseDouble(total) * 0.1);
         } else if (discountCardNumber == null) {
             return "0";
@@ -139,16 +151,16 @@ public class CheckService {
     }
 
     private String countDiscountIfCardExists(String discountCardNumber,
-                                             String total) {
-        String[] discountInfo = CSVWorker.findDiscountInfoByCardNumber(csvDiscounts, discountCardNumber);
-        if (discountInfo == null) {
+                                             String total) throws SQLException {
+        DiscountCard discountCard = discountCardRepository.getDiscountCardByNumber(Integer.parseInt(discountCardNumber));
+        if (discountCard== null) {
             return String.format("%.2f", Double.parseDouble(total) * 0.03);
         }
-        return String.format("%.2f", Double.parseDouble(total) * Double.parseDouble(discountInfo[2]) * 0.01);
+        return String.format("%.2f", Double.parseDouble(total) * discountCard.getAmount() * 0.01);
 
     }
 
-    private void addDiscountCardInfo(List<String[]> csvResult) {
+    private void addDiscountCardInfo(List<String[]> csvResult) throws SQLException {
         String[] indexes = {"DISCOUNT CARD", "DISCOUNT PERCENTAGE"};
         csvResult.add(indexes);
 
@@ -159,12 +171,12 @@ public class CheckService {
         csvResult.add(new String[]{});
     }
 
-    private String getDiscountPercentageIfCardExists(String discountCardNumber) {
-        String[] discountInfo = CSVWorker.findDiscountInfoByCardNumber(csvDiscounts, discountCardNumber);
-        if (discountInfo == null) {
+    private String getDiscountPercentageIfCardExists(String discountCardNumber) throws SQLException {
+        DiscountCard discountCard = discountCardRepository.getDiscountCardByNumber(Integer.parseInt(discountCardNumber));
+        if (discountCard == null) {
             return "3";
         }
-        return discountInfo[2];
+        return String.valueOf(discountCard.getAmount());
 
     }
 

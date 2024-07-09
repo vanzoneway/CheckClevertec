@@ -1,4 +1,4 @@
-package main.java.ru.clevertec.check;
+package ru.clevertec.check;
 
 import java.io.*;
 import java.util.ArrayList;
@@ -43,39 +43,5 @@ public class CSVWorker implements CSVReader, CSVWriter {
         }
     }
 
-    @Override
-    public String[] findProductById(List<String[]> csvData, int productId) {
 
-        Iterator<String[]> iterator = csvData.iterator();
-        if (iterator.hasNext()) {
-            iterator.next();
-        }
-
-        while (iterator.hasNext()) {
-            String[] row = iterator.next();
-            if (Integer.parseInt(row[0]) == productId) {
-                return row;
-            }
-        }
-
-        return null;
-    }
-
-    @Override
-    public String[] findDiscountInfoByCardNumber(List<String[]> csvData, String cardNumber) {
-
-        for (int i = 1; i < csvData.size(); i++) {
-            String[] row = csvData.get(i);
-            if (Objects.equals(row[1], cardNumber)) {
-                return row;
-            }
-        }
-        return null;
-    }
-
-    public void printCSVData(List<String[]> csvData) {
-        for (String[] row : csvData) {
-            System.out.println(String.join("; ", row));
-        }
-    }
 }

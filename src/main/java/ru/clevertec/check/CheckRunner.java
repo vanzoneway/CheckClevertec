@@ -1,14 +1,15 @@
-package main.java.ru.clevertec.check;
+package ru.clevertec.check;
 
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Objects;
 
+
 public class CheckRunner {
     public static void main(String[] args) {
 
-        final String pathToDiscountCards = "./src/main/resources/discountCards.csv";
+
         String defaultSaveToFile = "./src/main/result.csv";
         InputParams inputParams = null;
 
@@ -21,9 +22,12 @@ public class CheckRunner {
             System.exit(1);
         }
 
+        ProductRepository productRepository = new JdbcProductRepository(inputParams);
+        DiscountCardRepository discountCardRepository = new JdbcDiscountCardRepository(inputParams);
+
         try {
             assert inputParams != null;
-            CheckService checkService = new CheckService(pathToDiscountCards, inputParams);
+            CheckService checkService = new CheckService(inputParams, discountCardRepository,  productRepository);
             checkService.createCheck();
         } catch (Exception e) {
             if (Objects.isNull(inputParams.getSaveToFile())) {
@@ -32,6 +36,7 @@ public class CheckRunner {
                 logErrorResult(CSVWorker, inputParams.getSaveToFile(), e);
             }
         }
+
 
     }
 
