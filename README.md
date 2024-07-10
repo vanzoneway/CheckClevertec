@@ -5,7 +5,6 @@ This repository contains 5 branches: feature/entry-core, feature/entry-file, fea
     - [Prerequisites](#prerequisites)
     - [Installation](#installation)
 - [Example of usage](#example-of-usage)
-- [Tests](#tests)
 - [Note](#note)
 
 
@@ -13,6 +12,7 @@ This repository contains 5 branches: feature/entry-core, feature/entry-file, fea
 ### Prerequisites
 Make sure you have the following installed:
 - Java (version 21 or higher)
+- PostgreSQL
 
 ## Installation
 
@@ -45,45 +45,101 @@ ALTER USER postgres WITH PASSWORD 'postgres';
 ```bash
 git clone https://github.com/vanzoneway/CheckClevertec.git
  ```
-5. Compile the project into .jar file:
+5. Run src/main/resources/data.sql script from your database to init data.
+6. Compile the project and run it on ApacheTomcat:
 ```bash
-./gradlew jar
+./gradlew deployApp
  ```
+
+or you can
+
+```bash 
+./gradlew war
+```
+Warning!!! It can be some issues if you run gradle.build through IntellijIdea. You have remove war { ... } from build.gradle
+- Now uou have to move your created war archive into apache-tomcat-9.0.91/webapps
+Next step: 
+```bash
+./gradlew startTomcat
+```
 
 Note: You should execute this command from the CheckClevertec directory.
 
-6. Run the application:
-```bash
-java -jar clevertec-check.jar id-quantity discountCard=xxxx balanceDebitCard=xxxx saveToFile=xxxx datasource.url=xxxx datasource.username=xxxx datasource.password=xxxx
-```
-Note:
-1. id - product identifier (see Table 1)
-2. quantity - quantity of the product
-3. discountCard=xxxx - name and number of the discount card (Information about discount cards ./src/main/resources/discountCards.csv)
-4. balanceDebitCard=xxxx - balance on the debit card
-5. saveToFile - specify the path to the file from the root of the project, where you plan to write the result.
-6. datasource.url=xxxx - url to database (example jdbc:postgresql://localhost:5432/check)
-7. datasource.username=xxxx - username for database ( example postgres )
-8. datasource.password=xxxx - password for database ( example postgres )
-- The result of running the program is stored in ./src/main/result.csv
-
-WARNING:
-- If saveToFile is missing - the error is written to src/main/result.csv
-
 ## Example of usage
 
-```bash
-java -jar clevertec-check.jar 3-1 2-5 5-1 discountCard=1111 balanceDebitCard=100 saveToFile=./result.csv datasource.url=jdbc:postgresql://localhost:5432/check datasource.username=postgres datasource.password=postgres
-```
-![img](src/resources/readme_images/example-of-usage-1.png)
+```http request
+POST http://localhost:8080/check
 
-## Tests
-To run tests, you can use the following command
-```bash
-./gradlew test
+{
+"products": [
+{
+"id": 1,
+"quantity": 5
+},
+{
+"id": 2,
+"quantity": 5
+}
+],
+"discountCard": 1234,
+"balanceDebitCard": 100
+}
 ```
-You can view the test results at the following path: ./build/reports/tests/test/index.html
-![img](src/resources/readme_images/test-result.png)
+- returns CSV file with result
+  ![img](src/resources/readme_images/example-of-usage-1.png)
+
+```http request
+GET http://localhost:8080/products?id=5
+```
+- returns product from database with id in parameter
+```http request
+PUT http://localhost:8080/products?id=3
+
+{
+"description": "Chocolate Ritter sport 100g.",
+"price": 3.25,
+"quantity": 5,
+"isWholesale ": true
+}
+
+```
+- update product information in database by id
+
+```http request
+DELETE http://localhost:8080/products?id=1
+```
+- delete product from database by id
+
+```http request
+GET http://localhost:8080/discountcards?id=1
+```
+- returns information about discount card by id
+
+```http request
+POST http://localhost:8080/discountcards
+
+{
+"discountCard": 5265,
+"discountAmount": 2
+}
+```
+- adds discount card in database
+
+```http request
+PUT http://localhost:8080/discountcards?id=1
+
+{
+"discountCard": 6786,
+"discountAmount": 3
+}
+```
+- update information about discount card in database. It cannot be to or more discount cards with similar card number
+```http request
+DELETE http://localhost:8080/discountcards?id=1
+```
+- delete discount card from database by id
+
+
 
 ## Note
 You can read all the information about the Task at src/main/resources/task (see Task 3 and all its appendices). 

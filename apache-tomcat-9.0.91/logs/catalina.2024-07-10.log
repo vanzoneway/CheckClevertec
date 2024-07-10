@@ -1,0 +1,636 @@
+10-Jul-2024 14:41:07.664 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.91
+10-Jul-2024 14:41:07.666 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jul 2 2024 12:35:51 UTC
+10-Jul-2024 14:41:07.666 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.91.0
+10-Jul-2024 14:41:07.666 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+10-Jul-2024 14:41:07.666 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            6.5.0-41-generic
+10-Jul-2024 14:41:07.666 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+10-Jul-2024 14:41:07.666 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-19-openjdk-amd64
+10-Jul-2024 14:41:07.666 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           19.0.2+7-Ubuntu-0ubuntu322.04
+10-Jul-2024 14:41:07.666 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Private Build
+10-Jul-2024 14:41:07.666 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91
+10-Jul-2024 14:41:07.666 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91
+10-Jul-2024 14:41:07.671 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+10-Jul-2024 14:41:07.671 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+10-Jul-2024 14:41:07.671 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+10-Jul-2024 14:41:07.671 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+10-Jul-2024 14:41:07.671 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+10-Jul-2024 14:41:07.671 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/conf/logging.properties
+10-Jul-2024 14:41:07.671 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+10-Jul-2024 14:41:07.671 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+10-Jul-2024 14:41:07.671 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+10-Jul-2024 14:41:07.672 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+10-Jul-2024 14:41:07.672 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+10-Jul-2024 14:41:07.672 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91
+10-Jul-2024 14:41:07.672 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91
+10-Jul-2024 14:41:07.672 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/temp
+10-Jul-2024 14:41:07.673 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+10-Jul-2024 14:41:07.853 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+10-Jul-2024 14:41:07.864 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [309] milliseconds
+10-Jul-2024 14:41:07.886 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+10-Jul-2024 14:41:07.886 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.91]
+10-Jul-2024 14:41:07.893 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/clevertec-check.war]
+10-Jul-2024 14:41:08.152 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+10-Jul-2024 14:41:08.171 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/clevertec-check.war] has finished in [277] ms
+10-Jul-2024 14:41:08.171 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/manager]
+10-Jul-2024 14:41:08.190 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/manager] has finished in [18] ms
+10-Jul-2024 14:41:08.190 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/host-manager]
+10-Jul-2024 14:41:08.200 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/host-manager] has finished in [10] ms
+10-Jul-2024 14:41:08.200 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/examples]
+10-Jul-2024 14:41:08.296 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/examples] has finished in [96] ms
+10-Jul-2024 14:41:08.296 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/docs]
+10-Jul-2024 14:41:08.305 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/docs] has finished in [9] ms
+10-Jul-2024 14:41:08.305 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/ROOT]
+10-Jul-2024 14:41:08.399 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+10-Jul-2024 14:41:08.401 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/ROOT] has finished in [95] ms
+10-Jul-2024 14:41:08.403 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+10-Jul-2024 14:41:08.407 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [542] milliseconds
+10-Jul-2024 14:42:01.072 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+10-Jul-2024 14:42:01.074 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+10-Jul-2024 14:42:01.079 WARNING [Thread-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [ROOT] registered the JDBC driver [org.postgresql.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+10-Jul-2024 14:42:01.095 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+10-Jul-2024 14:42:01.107 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+10-Jul-2024 14:47:18.474 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.91
+10-Jul-2024 14:47:18.476 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jul 2 2024 12:35:51 UTC
+10-Jul-2024 14:47:18.476 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.91.0
+10-Jul-2024 14:47:18.477 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+10-Jul-2024 14:47:18.477 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            6.5.0-41-generic
+10-Jul-2024 14:47:18.477 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+10-Jul-2024 14:47:18.477 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-19-openjdk-amd64
+10-Jul-2024 14:47:18.477 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           19.0.2+7-Ubuntu-0ubuntu322.04
+10-Jul-2024 14:47:18.477 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Private Build
+10-Jul-2024 14:47:18.477 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91
+10-Jul-2024 14:47:18.477 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91
+10-Jul-2024 14:47:18.481 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+10-Jul-2024 14:47:18.481 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+10-Jul-2024 14:47:18.481 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+10-Jul-2024 14:47:18.481 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+10-Jul-2024 14:47:18.482 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+10-Jul-2024 14:47:18.482 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/conf/logging.properties
+10-Jul-2024 14:47:18.482 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+10-Jul-2024 14:47:18.482 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+10-Jul-2024 14:47:18.482 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+10-Jul-2024 14:47:18.482 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+10-Jul-2024 14:47:18.482 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+10-Jul-2024 14:47:18.482 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91
+10-Jul-2024 14:47:18.482 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91
+10-Jul-2024 14:47:18.482 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/temp
+10-Jul-2024 14:47:18.483 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+10-Jul-2024 14:47:18.675 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+10-Jul-2024 14:47:18.688 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [300] milliseconds
+10-Jul-2024 14:47:18.712 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+10-Jul-2024 14:47:18.713 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.91]
+10-Jul-2024 14:47:18.722 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/clevertec-check.war]
+10-Jul-2024 14:47:18.954 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+10-Jul-2024 14:47:18.968 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/clevertec-check.war] has finished in [246] ms
+10-Jul-2024 14:47:18.968 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/manager]
+10-Jul-2024 14:47:18.987 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/manager] has finished in [19] ms
+10-Jul-2024 14:47:18.987 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/host-manager]
+10-Jul-2024 14:47:18.997 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/host-manager] has finished in [10] ms
+10-Jul-2024 14:47:18.997 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/examples]
+10-Jul-2024 14:47:19.080 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/examples] has finished in [82] ms
+10-Jul-2024 14:47:19.080 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/docs]
+10-Jul-2024 14:47:19.088 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/docs] has finished in [8] ms
+10-Jul-2024 14:47:19.089 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/ROOT]
+10-Jul-2024 14:47:19.178 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+10-Jul-2024 14:47:19.180 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/ROOT] has finished in [90] ms
+10-Jul-2024 14:47:19.182 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+10-Jul-2024 14:47:19.186 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [497] milliseconds
+10-Jul-2024 14:47:24.861 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+10-Jul-2024 14:47:24.864 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+10-Jul-2024 14:47:24.880 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+10-Jul-2024 14:47:24.887 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+10-Jul-2024 14:49:58.510 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.91
+10-Jul-2024 14:49:58.512 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jul 2 2024 12:35:51 UTC
+10-Jul-2024 14:49:58.512 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.91.0
+10-Jul-2024 14:49:58.512 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+10-Jul-2024 14:49:58.512 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            6.5.0-41-generic
+10-Jul-2024 14:49:58.512 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+10-Jul-2024 14:49:58.512 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-19-openjdk-amd64
+10-Jul-2024 14:49:58.512 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           19.0.2+7-Ubuntu-0ubuntu322.04
+10-Jul-2024 14:49:58.512 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Private Build
+10-Jul-2024 14:49:58.512 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91
+10-Jul-2024 14:49:58.512 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91
+10-Jul-2024 14:49:58.517 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+10-Jul-2024 14:49:58.517 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+10-Jul-2024 14:49:58.517 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+10-Jul-2024 14:49:58.517 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+10-Jul-2024 14:49:58.517 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+10-Jul-2024 14:49:58.517 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/conf/logging.properties
+10-Jul-2024 14:49:58.517 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+10-Jul-2024 14:49:58.517 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+10-Jul-2024 14:49:58.518 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+10-Jul-2024 14:49:58.518 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+10-Jul-2024 14:49:58.518 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+10-Jul-2024 14:49:58.518 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91
+10-Jul-2024 14:49:58.518 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91
+10-Jul-2024 14:49:58.518 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/temp
+10-Jul-2024 14:49:58.519 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+10-Jul-2024 14:49:58.683 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+10-Jul-2024 14:49:58.694 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [270] milliseconds
+10-Jul-2024 14:49:58.715 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+10-Jul-2024 14:49:58.715 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.91]
+10-Jul-2024 14:49:58.723 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/clevertec-check.war]
+10-Jul-2024 14:49:58.950 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+10-Jul-2024 14:49:58.965 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/clevertec-check.war] has finished in [241] ms
+10-Jul-2024 14:49:58.965 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/manager]
+10-Jul-2024 14:49:58.983 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/manager] has finished in [18] ms
+10-Jul-2024 14:49:58.983 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/host-manager]
+10-Jul-2024 14:49:58.993 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/host-manager] has finished in [10] ms
+10-Jul-2024 14:49:58.993 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/examples]
+10-Jul-2024 14:49:59.071 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/examples] has finished in [78] ms
+10-Jul-2024 14:49:59.071 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/docs]
+10-Jul-2024 14:49:59.080 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/docs] has finished in [9] ms
+10-Jul-2024 14:49:59.080 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/ROOT]
+10-Jul-2024 14:49:59.159 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+10-Jul-2024 14:49:59.161 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/ROOT] has finished in [81] ms
+10-Jul-2024 14:49:59.163 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+10-Jul-2024 14:49:59.167 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [472] milliseconds
+10-Jul-2024 14:50:12.542 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+10-Jul-2024 14:50:12.545 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+10-Jul-2024 14:50:12.560 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+10-Jul-2024 14:50:12.568 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+10-Jul-2024 14:50:14.501 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.91
+10-Jul-2024 14:50:14.503 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jul 2 2024 12:35:51 UTC
+10-Jul-2024 14:50:14.503 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.91.0
+10-Jul-2024 14:50:14.503 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+10-Jul-2024 14:50:14.503 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            6.5.0-41-generic
+10-Jul-2024 14:50:14.503 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+10-Jul-2024 14:50:14.503 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-19-openjdk-amd64
+10-Jul-2024 14:50:14.503 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           19.0.2+7-Ubuntu-0ubuntu322.04
+10-Jul-2024 14:50:14.503 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Private Build
+10-Jul-2024 14:50:14.503 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91
+10-Jul-2024 14:50:14.503 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91
+10-Jul-2024 14:50:14.508 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+10-Jul-2024 14:50:14.508 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+10-Jul-2024 14:50:14.508 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+10-Jul-2024 14:50:14.508 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+10-Jul-2024 14:50:14.508 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+10-Jul-2024 14:50:14.509 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/conf/logging.properties
+10-Jul-2024 14:50:14.509 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+10-Jul-2024 14:50:14.509 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+10-Jul-2024 14:50:14.509 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+10-Jul-2024 14:50:14.509 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+10-Jul-2024 14:50:14.509 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+10-Jul-2024 14:50:14.509 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91
+10-Jul-2024 14:50:14.509 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91
+10-Jul-2024 14:50:14.509 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/temp
+10-Jul-2024 14:50:14.510 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+10-Jul-2024 14:50:14.696 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+10-Jul-2024 14:50:14.711 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [296] milliseconds
+10-Jul-2024 14:50:14.732 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+10-Jul-2024 14:50:14.732 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.91]
+10-Jul-2024 14:50:14.738 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/clevertec-check.war]
+10-Jul-2024 14:50:14.958 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+10-Jul-2024 14:50:14.972 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/clevertec-check.war] has finished in [233] ms
+10-Jul-2024 14:50:14.972 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/manager]
+10-Jul-2024 14:50:14.990 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/manager] has finished in [18] ms
+10-Jul-2024 14:50:14.990 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/host-manager]
+10-Jul-2024 14:50:15.000 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/host-manager] has finished in [9] ms
+10-Jul-2024 14:50:15.000 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/examples]
+10-Jul-2024 14:50:15.079 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/examples] has finished in [79] ms
+10-Jul-2024 14:50:15.080 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/docs]
+10-Jul-2024 14:50:15.088 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/docs] has finished in [9] ms
+10-Jul-2024 14:50:15.088 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/ROOT]
+10-Jul-2024 14:50:15.173 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+10-Jul-2024 14:50:15.175 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/ROOT] has finished in [87] ms
+10-Jul-2024 14:50:15.177 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+10-Jul-2024 14:50:15.182 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [470] milliseconds
+10-Jul-2024 14:50:18.416 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+10-Jul-2024 14:50:18.420 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+10-Jul-2024 14:50:18.434 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+10-Jul-2024 14:50:18.443 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+10-Jul-2024 14:50:46.580 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.91
+10-Jul-2024 14:50:46.583 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jul 2 2024 12:35:51 UTC
+10-Jul-2024 14:50:46.583 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.91.0
+10-Jul-2024 14:50:46.583 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+10-Jul-2024 14:50:46.583 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            6.5.0-41-generic
+10-Jul-2024 14:50:46.583 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+10-Jul-2024 14:50:46.583 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-19-openjdk-amd64
+10-Jul-2024 14:50:46.583 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           19.0.2+7-Ubuntu-0ubuntu322.04
+10-Jul-2024 14:50:46.583 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Private Build
+10-Jul-2024 14:50:46.583 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91
+10-Jul-2024 14:50:46.583 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91
+10-Jul-2024 14:50:46.588 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+10-Jul-2024 14:50:46.588 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+10-Jul-2024 14:50:46.588 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+10-Jul-2024 14:50:46.588 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+10-Jul-2024 14:50:46.588 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+10-Jul-2024 14:50:46.588 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/conf/logging.properties
+10-Jul-2024 14:50:46.588 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+10-Jul-2024 14:50:46.588 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+10-Jul-2024 14:50:46.588 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+10-Jul-2024 14:50:46.589 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+10-Jul-2024 14:50:46.589 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+10-Jul-2024 14:50:46.589 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91
+10-Jul-2024 14:50:46.589 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91
+10-Jul-2024 14:50:46.589 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/temp
+10-Jul-2024 14:50:46.590 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+10-Jul-2024 14:50:46.764 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+10-Jul-2024 14:50:46.778 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [291] milliseconds
+10-Jul-2024 14:50:46.802 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+10-Jul-2024 14:50:46.802 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.91]
+10-Jul-2024 14:50:46.806 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/manager]
+10-Jul-2024 14:50:46.962 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/manager] has finished in [156] ms
+10-Jul-2024 14:50:46.962 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/host-manager]
+10-Jul-2024 14:50:46.978 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/host-manager] has finished in [16] ms
+10-Jul-2024 14:50:46.978 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/examples]
+10-Jul-2024 14:50:47.084 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/examples] has finished in [106] ms
+10-Jul-2024 14:50:47.084 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/docs]
+10-Jul-2024 14:50:47.094 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/docs] has finished in [9] ms
+10-Jul-2024 14:50:47.094 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/ROOT]
+10-Jul-2024 14:50:47.200 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+10-Jul-2024 14:50:47.203 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/ROOT] has finished in [109] ms
+10-Jul-2024 14:50:47.205 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+10-Jul-2024 14:50:47.209 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [430] milliseconds
+10-Jul-2024 14:51:16.535 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+10-Jul-2024 14:51:16.536 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+10-Jul-2024 14:51:16.540 WARNING [Thread-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [ROOT] registered the JDBC driver [org.postgresql.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+10-Jul-2024 14:51:16.553 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+10-Jul-2024 14:51:16.559 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+10-Jul-2024 14:51:53.560 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.91
+10-Jul-2024 14:51:53.562 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jul 2 2024 12:35:51 UTC
+10-Jul-2024 14:51:53.562 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.91.0
+10-Jul-2024 14:51:53.562 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+10-Jul-2024 14:51:53.562 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            6.5.0-41-generic
+10-Jul-2024 14:51:53.562 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+10-Jul-2024 14:51:53.562 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-19-openjdk-amd64
+10-Jul-2024 14:51:53.563 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           19.0.2+7-Ubuntu-0ubuntu322.04
+10-Jul-2024 14:51:53.563 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Private Build
+10-Jul-2024 14:51:53.563 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91
+10-Jul-2024 14:51:53.563 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91
+10-Jul-2024 14:51:53.568 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+10-Jul-2024 14:51:53.568 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+10-Jul-2024 14:51:53.568 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+10-Jul-2024 14:51:53.568 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+10-Jul-2024 14:51:53.568 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+10-Jul-2024 14:51:53.568 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/conf/logging.properties
+10-Jul-2024 14:51:53.568 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+10-Jul-2024 14:51:53.568 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+10-Jul-2024 14:51:53.568 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+10-Jul-2024 14:51:53.568 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+10-Jul-2024 14:51:53.568 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+10-Jul-2024 14:51:53.568 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91
+10-Jul-2024 14:51:53.569 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91
+10-Jul-2024 14:51:53.569 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/temp
+10-Jul-2024 14:51:53.570 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+10-Jul-2024 14:51:53.736 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+10-Jul-2024 14:51:53.751 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [295] milliseconds
+10-Jul-2024 14:51:53.775 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+10-Jul-2024 14:51:53.775 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.91]
+10-Jul-2024 14:51:53.779 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/manager]
+10-Jul-2024 14:51:53.944 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/manager] has finished in [165] ms
+10-Jul-2024 14:51:53.945 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/host-manager]
+10-Jul-2024 14:51:53.956 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/host-manager] has finished in [11] ms
+10-Jul-2024 14:51:53.956 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/examples]
+10-Jul-2024 14:51:54.055 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/examples] has finished in [99] ms
+10-Jul-2024 14:51:54.055 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/docs]
+10-Jul-2024 14:51:54.065 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/docs] has finished in [10] ms
+10-Jul-2024 14:51:54.065 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/ROOT]
+10-Jul-2024 14:51:54.184 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+10-Jul-2024 14:51:54.187 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/ROOT] has finished in [122] ms
+10-Jul-2024 14:51:54.190 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+10-Jul-2024 14:51:54.194 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [441] milliseconds
+10-Jul-2024 14:51:55.441 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+10-Jul-2024 14:51:55.444 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+10-Jul-2024 14:51:55.457 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+10-Jul-2024 14:51:55.467 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+10-Jul-2024 14:52:09.833 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.91
+10-Jul-2024 14:52:09.835 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jul 2 2024 12:35:51 UTC
+10-Jul-2024 14:52:09.835 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.91.0
+10-Jul-2024 14:52:09.835 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+10-Jul-2024 14:52:09.835 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            6.5.0-41-generic
+10-Jul-2024 14:52:09.835 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+10-Jul-2024 14:52:09.835 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-19-openjdk-amd64
+10-Jul-2024 14:52:09.835 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           19.0.2+7-Ubuntu-0ubuntu322.04
+10-Jul-2024 14:52:09.835 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Private Build
+10-Jul-2024 14:52:09.835 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91
+10-Jul-2024 14:52:09.835 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91
+10-Jul-2024 14:52:09.840 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+10-Jul-2024 14:52:09.841 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+10-Jul-2024 14:52:09.841 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+10-Jul-2024 14:52:09.841 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+10-Jul-2024 14:52:09.841 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+10-Jul-2024 14:52:09.841 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/conf/logging.properties
+10-Jul-2024 14:52:09.841 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+10-Jul-2024 14:52:09.841 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+10-Jul-2024 14:52:09.841 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+10-Jul-2024 14:52:09.841 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+10-Jul-2024 14:52:09.841 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+10-Jul-2024 14:52:09.841 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91
+10-Jul-2024 14:52:09.841 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91
+10-Jul-2024 14:52:09.841 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/temp
+10-Jul-2024 14:52:09.842 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+10-Jul-2024 14:52:10.017 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+10-Jul-2024 14:52:10.028 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [283] milliseconds
+10-Jul-2024 14:52:10.048 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+10-Jul-2024 14:52:10.048 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.91]
+10-Jul-2024 14:52:10.052 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/manager]
+10-Jul-2024 14:52:10.187 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/manager] has finished in [135] ms
+10-Jul-2024 14:52:10.187 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/host-manager]
+10-Jul-2024 14:52:10.200 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/host-manager] has finished in [12] ms
+10-Jul-2024 14:52:10.200 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/examples]
+10-Jul-2024 14:52:10.334 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/examples] has finished in [134] ms
+10-Jul-2024 14:52:10.334 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/docs]
+10-Jul-2024 14:52:10.344 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/docs] has finished in [10] ms
+10-Jul-2024 14:52:10.344 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/ROOT]
+10-Jul-2024 14:52:10.448 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+10-Jul-2024 14:52:10.451 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/ROOT] has finished in [107] ms
+10-Jul-2024 14:52:10.453 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+10-Jul-2024 14:52:10.458 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [429] milliseconds
+10-Jul-2024 14:52:12.009 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+10-Jul-2024 14:52:12.014 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+10-Jul-2024 14:52:12.031 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+10-Jul-2024 14:52:12.036 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+10-Jul-2024 14:52:23.049 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.91
+10-Jul-2024 14:52:23.051 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jul 2 2024 12:35:51 UTC
+10-Jul-2024 14:52:23.051 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.91.0
+10-Jul-2024 14:52:23.051 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+10-Jul-2024 14:52:23.051 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            6.5.0-41-generic
+10-Jul-2024 14:52:23.051 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+10-Jul-2024 14:52:23.051 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-19-openjdk-amd64
+10-Jul-2024 14:52:23.051 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           19.0.2+7-Ubuntu-0ubuntu322.04
+10-Jul-2024 14:52:23.051 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Private Build
+10-Jul-2024 14:52:23.051 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91
+10-Jul-2024 14:52:23.051 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91
+10-Jul-2024 14:52:23.056 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+10-Jul-2024 14:52:23.057 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+10-Jul-2024 14:52:23.057 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+10-Jul-2024 14:52:23.057 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+10-Jul-2024 14:52:23.057 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+10-Jul-2024 14:52:23.057 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/conf/logging.properties
+10-Jul-2024 14:52:23.057 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+10-Jul-2024 14:52:23.057 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+10-Jul-2024 14:52:23.057 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+10-Jul-2024 14:52:23.057 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+10-Jul-2024 14:52:23.057 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+10-Jul-2024 14:52:23.057 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91
+10-Jul-2024 14:52:23.057 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91
+10-Jul-2024 14:52:23.057 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/temp
+10-Jul-2024 14:52:23.058 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+10-Jul-2024 14:52:23.223 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+10-Jul-2024 14:52:23.234 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [274] milliseconds
+10-Jul-2024 14:52:23.254 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+10-Jul-2024 14:52:23.254 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.91]
+10-Jul-2024 14:52:23.259 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/manager]
+10-Jul-2024 14:52:23.393 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/manager] has finished in [133] ms
+10-Jul-2024 14:52:23.393 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/host-manager]
+10-Jul-2024 14:52:23.404 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/host-manager] has finished in [11] ms
+10-Jul-2024 14:52:23.404 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/examples]
+10-Jul-2024 14:52:23.505 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/examples] has finished in [101] ms
+10-Jul-2024 14:52:23.505 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/docs]
+10-Jul-2024 14:52:23.515 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/docs] has finished in [10] ms
+10-Jul-2024 14:52:23.515 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/ROOT]
+10-Jul-2024 14:52:23.628 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+10-Jul-2024 14:52:23.631 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/ROOT] has finished in [116] ms
+10-Jul-2024 14:52:23.633 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+10-Jul-2024 14:52:23.638 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [402] milliseconds
+10-Jul-2024 14:52:35.108 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+10-Jul-2024 14:52:35.112 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+10-Jul-2024 14:52:35.132 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+10-Jul-2024 14:52:35.135 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+10-Jul-2024 17:29:13.302 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.91
+10-Jul-2024 17:29:13.305 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jul 2 2024 12:35:51 UTC
+10-Jul-2024 17:29:13.305 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.91.0
+10-Jul-2024 17:29:13.306 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+10-Jul-2024 17:29:13.306 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            6.5.0-41-generic
+10-Jul-2024 17:29:13.306 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+10-Jul-2024 17:29:13.306 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-19-openjdk-amd64
+10-Jul-2024 17:29:13.306 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           19.0.2+7-Ubuntu-0ubuntu322.04
+10-Jul-2024 17:29:13.306 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Private Build
+10-Jul-2024 17:29:13.306 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91
+10-Jul-2024 17:29:13.306 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91
+10-Jul-2024 17:29:13.313 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+10-Jul-2024 17:29:13.313 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+10-Jul-2024 17:29:13.313 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+10-Jul-2024 17:29:13.313 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+10-Jul-2024 17:29:13.313 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+10-Jul-2024 17:29:13.314 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/conf/logging.properties
+10-Jul-2024 17:29:13.314 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+10-Jul-2024 17:29:13.314 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+10-Jul-2024 17:29:13.314 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+10-Jul-2024 17:29:13.314 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+10-Jul-2024 17:29:13.314 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+10-Jul-2024 17:29:13.314 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91
+10-Jul-2024 17:29:13.314 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91
+10-Jul-2024 17:29:13.314 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/temp
+10-Jul-2024 17:29:13.316 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+10-Jul-2024 17:29:13.581 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+10-Jul-2024 17:29:13.597 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [434] milliseconds
+10-Jul-2024 17:29:13.628 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+10-Jul-2024 17:29:13.628 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.91]
+10-Jul-2024 17:29:13.634 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/manager]
+10-Jul-2024 17:29:13.854 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/manager] has finished in [220] ms
+10-Jul-2024 17:29:13.854 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/host-manager]
+10-Jul-2024 17:29:13.874 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/host-manager] has finished in [20] ms
+10-Jul-2024 17:29:13.874 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/examples]
+10-Jul-2024 17:29:14.036 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/examples] has finished in [162] ms
+10-Jul-2024 17:29:14.037 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/docs]
+10-Jul-2024 17:29:14.052 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/docs] has finished in [15] ms
+10-Jul-2024 17:29:14.052 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/ROOT]
+10-Jul-2024 17:29:14.223 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+10-Jul-2024 17:29:14.228 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/ROOT] has finished in [175] ms
+10-Jul-2024 17:29:14.231 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+10-Jul-2024 17:29:14.238 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [639] milliseconds
+10-Jul-2024 17:29:27.515 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+10-Jul-2024 17:29:27.520 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+10-Jul-2024 17:29:27.539 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+10-Jul-2024 17:29:27.544 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+10-Jul-2024 17:38:30.002 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.91
+10-Jul-2024 17:38:30.005 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jul 2 2024 12:35:51 UTC
+10-Jul-2024 17:38:30.005 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.91.0
+10-Jul-2024 17:38:30.005 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+10-Jul-2024 17:38:30.005 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            6.5.0-41-generic
+10-Jul-2024 17:38:30.006 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+10-Jul-2024 17:38:30.006 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-19-openjdk-amd64
+10-Jul-2024 17:38:30.006 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           19.0.2+7-Ubuntu-0ubuntu322.04
+10-Jul-2024 17:38:30.006 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Private Build
+10-Jul-2024 17:38:30.006 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91
+10-Jul-2024 17:38:30.006 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91
+10-Jul-2024 17:38:30.013 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+10-Jul-2024 17:38:30.013 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+10-Jul-2024 17:38:30.013 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+10-Jul-2024 17:38:30.013 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+10-Jul-2024 17:38:30.013 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+10-Jul-2024 17:38:30.014 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/conf/logging.properties
+10-Jul-2024 17:38:30.014 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+10-Jul-2024 17:38:30.014 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+10-Jul-2024 17:38:30.014 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+10-Jul-2024 17:38:30.014 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+10-Jul-2024 17:38:30.014 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+10-Jul-2024 17:38:30.014 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91
+10-Jul-2024 17:38:30.014 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91
+10-Jul-2024 17:38:30.014 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/temp
+10-Jul-2024 17:38:30.016 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+10-Jul-2024 17:38:30.287 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+10-Jul-2024 17:38:30.303 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [457] milliseconds
+10-Jul-2024 17:38:30.334 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+10-Jul-2024 17:38:30.334 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.91]
+10-Jul-2024 17:38:30.339 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/manager]
+10-Jul-2024 17:38:30.543 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/manager] has finished in [204] ms
+10-Jul-2024 17:38:30.543 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/host-manager]
+10-Jul-2024 17:38:30.561 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/host-manager] has finished in [18] ms
+10-Jul-2024 17:38:30.562 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/examples]
+10-Jul-2024 17:38:30.725 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/examples] has finished in [163] ms
+10-Jul-2024 17:38:30.725 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/docs]
+10-Jul-2024 17:38:30.740 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/docs] has finished in [15] ms
+10-Jul-2024 17:38:30.740 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/ROOT]
+10-Jul-2024 17:38:30.912 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+10-Jul-2024 17:38:30.916 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/ROOT] has finished in [176] ms
+10-Jul-2024 17:38:30.919 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+10-Jul-2024 17:38:30.926 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [622] milliseconds
+10-Jul-2024 17:43:20.803 WARNING [main] org.apache.catalina.core.StandardServer.await Invalid shutdown command [] received
+10-Jul-2024 17:43:27.258 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+10-Jul-2024 17:43:27.261 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+10-Jul-2024 17:43:27.268 WARNING [Thread-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [ROOT] registered the JDBC driver [org.postgresql.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+10-Jul-2024 17:43:27.284 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+10-Jul-2024 17:43:27.295 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+10-Jul-2024 17:43:44.895 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.91
+10-Jul-2024 17:43:44.898 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jul 2 2024 12:35:51 UTC
+10-Jul-2024 17:43:44.898 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.91.0
+10-Jul-2024 17:43:44.899 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+10-Jul-2024 17:43:44.899 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            6.5.0-41-generic
+10-Jul-2024 17:43:44.899 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+10-Jul-2024 17:43:44.899 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-19-openjdk-amd64
+10-Jul-2024 17:43:44.899 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           19.0.2+7-Ubuntu-0ubuntu322.04
+10-Jul-2024 17:43:44.899 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Private Build
+10-Jul-2024 17:43:44.899 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91
+10-Jul-2024 17:43:44.899 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91
+10-Jul-2024 17:43:44.906 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+10-Jul-2024 17:43:44.907 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+10-Jul-2024 17:43:44.907 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+10-Jul-2024 17:43:44.907 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+10-Jul-2024 17:43:44.907 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+10-Jul-2024 17:43:44.907 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/conf/logging.properties
+10-Jul-2024 17:43:44.907 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+10-Jul-2024 17:43:44.907 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+10-Jul-2024 17:43:44.907 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+10-Jul-2024 17:43:44.907 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+10-Jul-2024 17:43:44.907 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+10-Jul-2024 17:43:44.907 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91
+10-Jul-2024 17:43:44.908 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91
+10-Jul-2024 17:43:44.908 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/temp
+10-Jul-2024 17:43:44.909 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+10-Jul-2024 17:43:45.169 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+10-Jul-2024 17:43:45.186 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [427] milliseconds
+10-Jul-2024 17:43:45.215 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+10-Jul-2024 17:43:45.215 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.91]
+10-Jul-2024 17:43:45.221 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/manager]
+10-Jul-2024 17:43:45.430 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/manager] has finished in [209] ms
+10-Jul-2024 17:43:45.430 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/host-manager]
+10-Jul-2024 17:43:45.451 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/host-manager] has finished in [21] ms
+10-Jul-2024 17:43:45.451 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/examples]
+10-Jul-2024 17:43:45.614 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/examples] has finished in [163] ms
+10-Jul-2024 17:43:45.614 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/docs]
+10-Jul-2024 17:43:45.630 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/docs] has finished in [15] ms
+10-Jul-2024 17:43:45.630 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/ROOT]
+10-Jul-2024 17:43:45.812 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+10-Jul-2024 17:43:45.816 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/ROOT] has finished in [186] ms
+10-Jul-2024 17:43:45.819 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+10-Jul-2024 17:43:45.828 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [641] milliseconds
+10-Jul-2024 17:45:38.147 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+10-Jul-2024 17:45:38.150 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+10-Jul-2024 17:45:38.159 WARNING [Thread-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [ROOT] registered the JDBC driver [org.postgresql.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+10-Jul-2024 17:45:38.177 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+10-Jul-2024 17:45:38.184 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+10-Jul-2024 17:46:01.849 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.91
+10-Jul-2024 17:46:01.852 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jul 2 2024 12:35:51 UTC
+10-Jul-2024 17:46:01.852 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.91.0
+10-Jul-2024 17:46:01.852 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+10-Jul-2024 17:46:01.852 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            6.5.0-41-generic
+10-Jul-2024 17:46:01.852 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+10-Jul-2024 17:46:01.852 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-19-openjdk-amd64
+10-Jul-2024 17:46:01.852 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           19.0.2+7-Ubuntu-0ubuntu322.04
+10-Jul-2024 17:46:01.852 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Private Build
+10-Jul-2024 17:46:01.852 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91
+10-Jul-2024 17:46:01.853 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91
+10-Jul-2024 17:46:01.860 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+10-Jul-2024 17:46:01.860 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+10-Jul-2024 17:46:01.860 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+10-Jul-2024 17:46:01.860 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+10-Jul-2024 17:46:01.860 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+10-Jul-2024 17:46:01.860 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/conf/logging.properties
+10-Jul-2024 17:46:01.860 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+10-Jul-2024 17:46:01.860 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+10-Jul-2024 17:46:01.860 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+10-Jul-2024 17:46:01.860 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+10-Jul-2024 17:46:01.860 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+10-Jul-2024 17:46:01.861 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91
+10-Jul-2024 17:46:01.861 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91
+10-Jul-2024 17:46:01.861 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/temp
+10-Jul-2024 17:46:01.862 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+10-Jul-2024 17:46:02.121 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+10-Jul-2024 17:46:02.139 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [427] milliseconds
+10-Jul-2024 17:46:02.169 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+10-Jul-2024 17:46:02.169 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.91]
+10-Jul-2024 17:46:02.180 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/clevertec-check.war]
+10-Jul-2024 17:46:02.567 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+10-Jul-2024 17:46:02.587 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/clevertec-check.war] has finished in [406] ms
+10-Jul-2024 17:46:02.587 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/manager]
+10-Jul-2024 17:46:02.614 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/manager] has finished in [27] ms
+10-Jul-2024 17:46:02.615 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/host-manager]
+10-Jul-2024 17:46:02.630 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/host-manager] has finished in [15] ms
+10-Jul-2024 17:46:02.630 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/examples]
+10-Jul-2024 17:46:02.749 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/examples] has finished in [118] ms
+10-Jul-2024 17:46:02.749 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/docs]
+10-Jul-2024 17:46:02.761 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/docs] has finished in [12] ms
+10-Jul-2024 17:46:02.761 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/ROOT]
+10-Jul-2024 17:46:02.879 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+10-Jul-2024 17:46:02.881 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/ROOT] has finished in [119] ms
+10-Jul-2024 17:46:02.884 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+10-Jul-2024 17:46:02.891 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [751] milliseconds
+10-Jul-2024 17:46:19.289 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+10-Jul-2024 17:46:19.290 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+10-Jul-2024 17:46:19.296 WARNING [Thread-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [ROOT] registered the JDBC driver [org.postgresql.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+10-Jul-2024 17:46:19.314 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+10-Jul-2024 17:46:19.325 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+10-Jul-2024 19:41:21.249 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.91
+10-Jul-2024 19:41:21.251 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jul 2 2024 12:35:51 UTC
+10-Jul-2024 19:41:21.251 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.91.0
+10-Jul-2024 19:41:21.251 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+10-Jul-2024 19:41:21.251 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            6.5.0-41-generic
+10-Jul-2024 19:41:21.251 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+10-Jul-2024 19:41:21.251 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-19-openjdk-amd64
+10-Jul-2024 19:41:21.251 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           19.0.2+7-Ubuntu-0ubuntu322.04
+10-Jul-2024 19:41:21.251 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Private Build
+10-Jul-2024 19:41:21.251 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91
+10-Jul-2024 19:41:21.251 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91
+10-Jul-2024 19:41:21.255 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+10-Jul-2024 19:41:21.256 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+10-Jul-2024 19:41:21.256 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+10-Jul-2024 19:41:21.256 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+10-Jul-2024 19:41:21.256 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+10-Jul-2024 19:41:21.256 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/conf/logging.properties
+10-Jul-2024 19:41:21.256 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+10-Jul-2024 19:41:21.256 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+10-Jul-2024 19:41:21.256 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+10-Jul-2024 19:41:21.256 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+10-Jul-2024 19:41:21.256 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+10-Jul-2024 19:41:21.256 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91
+10-Jul-2024 19:41:21.256 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91
+10-Jul-2024 19:41:21.256 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/temp
+10-Jul-2024 19:41:21.257 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+10-Jul-2024 19:41:21.424 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+10-Jul-2024 19:41:21.434 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [275] milliseconds
+10-Jul-2024 19:41:21.453 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+10-Jul-2024 19:41:21.453 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.91]
+10-Jul-2024 19:41:21.456 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/manager]
+10-Jul-2024 19:41:21.589 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/manager] has finished in [133] ms
+10-Jul-2024 19:41:21.590 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/clevertec-check]
+10-Jul-2024 19:41:21.721 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+10-Jul-2024 19:41:21.724 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/clevertec-check] has finished in [134] ms
+10-Jul-2024 19:41:21.724 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/host-manager]
+10-Jul-2024 19:41:21.734 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/host-manager] has finished in [10] ms
+10-Jul-2024 19:41:21.734 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/examples]
+10-Jul-2024 19:41:21.811 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/examples] has finished in [77] ms
+10-Jul-2024 19:41:21.812 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/docs]
+10-Jul-2024 19:41:21.820 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/docs] has finished in [8] ms
+10-Jul-2024 19:41:21.820 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/ROOT]
+10-Jul-2024 19:41:21.909 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+10-Jul-2024 19:41:21.910 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/vanz/IdeaProjects/CheckClevertec/apache-tomcat-9.0.91/webapps/ROOT] has finished in [90] ms
+10-Jul-2024 19:41:21.912 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+10-Jul-2024 19:41:21.917 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [482] milliseconds
+10-Jul-2024 19:46:20.336 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+10-Jul-2024 19:46:20.337 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+10-Jul-2024 19:46:20.341 WARNING [Thread-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [ROOT] registered the JDBC driver [org.postgresql.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+10-Jul-2024 19:46:20.355 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+10-Jul-2024 19:46:20.360 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]

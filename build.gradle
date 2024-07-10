@@ -1,6 +1,7 @@
 plugins {
     id 'java'
     id 'application'
+    id 'war'
 }
 
 group 'ru.clevertec'
@@ -10,6 +11,11 @@ sourceCompatibility = 17
 repositories {
     mavenCentral()
 }
+
+//war {
+//    archiveBaseName = 'clevertec-check'
+//    destinationDirectory = file('./apache-tomcat-9.0.91/webapps/')
+//}
 
 jar {
     manifest {
@@ -28,8 +34,28 @@ dependencies {
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
     testImplementation 'org.mockito:mockito-core:4.4.0'
     testImplementation 'org.mockito:mockito-junit-jupiter:4.4.0'
+    testImplementation 'org.powermock:powermock-module-junit4:2.0.9'
+    testImplementation 'org.powermock:powermock-api-mockito2:2.0.9'
     implementation 'org.postgresql:postgresql:42.7.2'
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.0.1'
+    compileOnly 'javax.servlet:javax.servlet-api:4.0.1'
 }
+
+tasks.register('startTomcat', Exec) {
+    description 'Starts Apache Tomcat'
+    workingDir './apache-tomcat-9.0.91/bin'
+    commandLine './catalina.sh', 'run'
+}
+
+tasks.register('stopTomcat', Exec) {
+    description 'Stops Apache Tomcat'
+    workingDir './apache-tomcat-9.0.91/bin'
+    commandLine './catalina.sh', 'stop'
+}
+
+
+task deployApp(dependsOn: [war, startTomcat])
+
 
 application {
     mainClass = 'ru.clevertec.check.CheckRunner'
